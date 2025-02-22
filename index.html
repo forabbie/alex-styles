@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alex Styles - Graphic Designer</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Alex Styles</div>
+        <ul class="nav-links">
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="hero">
+        <h1>Creative Design Solutions</h1>
+        <p>Bringing ideas to life through thoughtful design.</p>
+        <a href="#portfolio" class="btn">View My Work</a>
+      </div>
+    </header>
+
+    <section id="about" class="about-section">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          Hi, I'm Alex Styles, a passionate graphic designer with over 5 years
+          of experience in creating visually stunning designs. I specialize in
+          branding, web design, and illustration, helping businesses tell their
+          stories through creative visuals.
+        </p>
+      </div>
+    </section>
+
+    <section id="portfolio" class="portfolio-section">
+      <div class="container">
+        <h2>Portfolio</h2>
+        <div class="portfolio-grid">
+          <div class="portfolio-item">
+            <img src="project1.jpg" alt="Project 1" />
+            <h3>Branding for Nova</h3>
+          </div>
+          <div class="portfolio-item">
+            <img src="project2.jpg" alt="Project 2" />
+            <h3>Web Design for Luna</h3>
+          </div>
+          <div class="portfolio-item">
+            <img src="project3.jpg" alt="Project 3" />
+            <h3>Illustration for Astra</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Let's work together! Reach out to discuss your next project.</p>
+        <form>
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2023 Alex Styles. All rights reserved.</p>
+    </footer>
+    <!-- Modal -->
+    <div id="successModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Thank You!</h2>
+        <p>
+          Your message has been sent successfully. I'll get back to you soon.
+        </p>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
