@@ -1,4 +1,7 @@
 /* General Styles */
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Inter", sans-serif;
   background-color: #1a1a1a;
@@ -68,6 +71,33 @@ nav {
 
 .nav-links a:hover {
   color: #ff6b6b;
+}
+
+/* Tooltip Styles */
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a::after {
+  content: attr(title);
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ff6b6b;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  opacity: 1;
+  visibility: visible;
 }
 
 .hero h1 {
@@ -173,6 +203,28 @@ h2 {
 
 .contact-section button:hover {
   background-color: #ff4c4c;
+}
+/* Portfolio Modal Styles */
+#portfolioModal .modal-content {
+  max-width: 800px;
+  width: 90%;
+  padding: 20px;
+}
+
+#portfolioModal img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#portfolioModal h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+#portfolioModal p {
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 /* Modal Styles */
